@@ -194,14 +194,14 @@ table tr td:nth-child(2) {
   border-radius: 2px;
   color:black;
   padding: 0.1rem 0.2rem;
-  background-color: rgba(255, 254, 243, 0.925);
-  font-weight: 500;
-  color: #FDB066;
+  background-color: #FDB066;
+  font-weight: 400;
+  color: white;
 }
 
 .code {
   font-family: monospace;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 
