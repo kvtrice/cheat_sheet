@@ -20,7 +20,8 @@
       <nav>
         <div>
           <h1>
-            <span class="name-highlight">Kat's</span><br />
+            <span class="name-highlight">Kat's</span>
+            <br />
             <p>Coding Cheat Sheet</p>
           </h1>
           <hr />
@@ -39,111 +40,117 @@
 
     <!-- Main Content Start -->
     <main>
-      <div>
-        <h2>CSS Selectors</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Example</th>
-              <th>Type</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="code first"><span>p</span></td>
-              <td class="first type">Type Selector</td>
-              <td class="first">
-                CSS type selectors are used to match all elements of a given
-                type or tag name.
-              </td>
-            </tr>
-            <tr>
-              <td class="code"><span>.calendar</span></td>
-              <td class="type">Class Selector</td>
-              <td>
-                The CSS class selector matches elements based on the contents of
-                their class attribute.
-              </td>
-            </tr>
-            <tr>
-              <td class="code"><span>#first-item</span></td>
-              <td class="type">ID Selector</td>
-              <td>
-                ID selectors should be unique and used to style only a single
-                element. ID selectors are denoted with a hash sign # followed by
-                the id name.
-              </td>
-            </tr>
-            <tr>
-              <td class="code"><span>h1, h2</span></td>
-              <td class="type">Groups of CSS Selectors</td>
-              <td>
-                Match multiple selectors to the same CSS rule, using a
-                comma-separated list.
-              </td>
-            </tr>
-            <tr>
-              <td class="code"><span>h3.section-heading</span></td>
-              <td class="type">Chaining Selectors</td>
-              <td>
-                CSS selectors can be chained so that rule sets apply only to
-                elements that match all criteria. For instance, to select h3
-                elements that also have the section-heading class, the selector
-                h3.section-heading can be used.
-              </td>
-            </tr>
-            <tr>
-              <td class="code"><span>div p</span></td>
-              <td class="type">CSS Descendant Selector</td>
-              <td>
-                The CSS descendant selector combinator is used to match elements
-                that are descended from another matched selector. They are
-                denoted by a single space between each selector and the
-                descended selector.
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="css">
+        <h2>CSS</h2>
+        <hr />
+
+        <!-- CSS Selectors Table -->
+        <div class="css-selectors">
+          <table>
+            <!-- Table Heading (Caption)  -->
+            <caption>
+              <h3>CSS Selectors</h3>
+            </caption>
+
+            <!-- Table Head -->
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody>
+              <tr>
+                <td class="selector code"><span>p</span></td>
+                <td class="note">
+                  Type Selector: Matches all elements of a given type or tag
+                  name
+                </td>
+              </tr>
+              <tr>
+                <td class="selector code"><span>.calendar</span></td>
+                <td class="note">
+                  Class selector: Matches elements based on their class
+                </td>
+              </tr>
+              <tr>
+                <td class="selector code"><span>#first-item</span></td>
+                <td class="note">
+                  ID selector: Must be unique and used to style only a single
+                  element
+                </td>
+              </tr>
+              <tr>
+                <td class="selector code"><span>h1, h2</span></td>
+                <td class="note">
+                  Group of CSS Selectors: Match multiple selectors to the same
+                  CSS rule, using a comma
+                </td>
+              </tr>
+              <tr>
+                <td class="selector code"><span>h3.section-heading</span></td>
+                <td class="note">
+                  Chaining Selectors: Elements muct match all specified
+                  selectors
+                </td>
+              </tr>
+              <tr>
+                <td class="selector code"><span>div p</span></td>
+                <td class="note">
+                  Descendant Selector: Match elements that are descended from
+                  another
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- CSS Properties Table -->
+        <div class="css-properties">
+          <table>
+            <!-- Table Heading (Caption) -->
+            <caption>
+              <h3>CSS Properties</h3>
+            </caption>
+
+            <!-- Table Head -->
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody>
+              <tr>
+                <td class="property code"><span>background-color</span></td>
+                <td class="note">Controls the background color of elements.</td>
+              </tr>
+              <tr>
+                <td class="property code"><span>!important</span></td>
+                <td class="note">
+                  Used on declarations to override any other declarations for a
+                  property and ignore selector specificity.
+                </td>
+              </tr>
+              <tr>
+                <td class="property code"><span>opacity</span></td>
+                <td>Ranges from 0 (transparent) to 1 (opaque).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div>
-        <h2>Common CSS Properties</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Property</th>
-              <th>Example</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="code first"><span>background-color</span></td>
-              <td class="code first"><span>background-color: blue;</span></td>
-              <td class="first">Controls the background color of elements.</td>
-            </tr>
-            <tr>
-              <td class="code"><span>!important</span></td>
-              <td class="code"><span>width: 200px !important;</span></td>
-              <td>
-                Used on declarations to override any other declarations for a
-                property and ignore selector specificity.
-              </td>
-            </tr>
-            <tr>
-              <td class="code"><span>opacity</span></td>
-              <td class="code"><span>opacity: 0.5;</span></td>
-              <td>
-                Can be used to control the transparency of an element. The value
-                of this property ranges from 0 (transparent) to 1 (opaque).
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+
+      <!-- Footer -->
       <footer>
-        <p>Thanks for stopping by! 🤗</p>
+        <p>Made with ❤️ by <a href="#">Kat</a></p>
       </footer>
+
+      <!-- Close Main -->
     </main>
   </body>
 </html>

@@ -1,11 +1,8 @@
 /* Universal Styles */
 
-* {
-  background-color: #E9E1FD;
-}
-
 html {
   font-size: 16px;
+  margin: 2rem;
 }
 
 @font-face {
@@ -25,16 +22,22 @@ html {
 body {
   text-align: center;
   font-family: 'BodyGrotesqueFit';
+  background-color: #E9E1FD;
 }
 
 h2 {
   color: black;
   font-size: 1.5rem;
-  font-family: "BodyGrotesqueFit";
   line-height: 1.2;
 }
 
+
 /* Nav Styles */
+
+h1 {
+  margin-top: 2rem;
+  line-height: 0.5;
+}
 
 h1 p {
   font-family: 'Arapey';
@@ -54,13 +57,13 @@ nav li {
 }
 
 nav {
+  margin: 2rem;
   width: 15rem;
-  display: flex;
-  flex-direction: column;
-  float: left;
   position: fixed;
-  margin: 2rem 2rem;
-  border-radius: 5px;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
   border: solid 1px black;
   padding-bottom: 1rem;
   padding-left: 0.5rem;
@@ -100,86 +103,120 @@ a:hover {
   background-color: white;
 }
 
-/* Main section styles */
+
+/* Align Main section to the right of the nav bar */
 
 main {
-  float: right;
+  margin-left: 18rem;
   display: flex;
   flex-direction: column;
-  width: calc(100% - 15rem);
+  width: calc(100% - 18rem);
+
 }
 
-
-
-table {
-  width: 1000px;
-  margin: auto;
+.css {
   border: 1px solid black;
   border-radius: 8px;
-  padding: 10px;
+  padding: 1rem;
   background-color: white;
 }
 
-table tr td:first-child {
-  width: 20%;
+
+/* Table Styles */
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
-table tr td:nth-child(2) {
-  width: 25%;
-}
-
-table tr td:last-child {
-  width: 55%;
-}
-
-th, td {
+caption {
+  background-color: white;
   text-align: left;
+}
+
+h2 {
   background-color: white;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+h3 {
+  display: inline-block;
+  background-color:#E9E1FD;
+  color: black;
+  border-radius: 5px;
+  padding: 0.3rem;
+  border: solid 1px black;
+  font-size: 1.2rem;
 }
 
 th {
   color: black;
-  padding-bottom: 10px;
-  padding-left: 5px;
   font-family: 'BodyGrotesqueFit', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.25em;
-  color: #313639;
+  text-decoration: underline;
+  background: white;
+  text-align: left;
+  padding-bottom: 0.6rem;
+  padding-left: 0.2rem;
+}
+
+tr {
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+tr:nth-of-type(2n) {
+  background-color: hsla(259, 87%, 94%, 0.25);
 }
 
 td {
-  padding: 5px;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 0.8rem;
+  padding: 0.5rem 0.2rem;
 }
+
+/* Set column widths */
+
+table tr td:first-child {
+  width: 25%;
+}
+
+table tr td:nth-child(2) {
+  width: 75%;
+}
+
+/* Code Snippet Styles */
 
 .code span {
-  background-color: papayawhip;
-}
-
-footer {
-  padding-top: 40px;
-  padding-bottom: 100px;
-}
-
-p {
-  font-family: 'Arapey';
-  font-style: italic;
-  font-size: 20px;
+  border-radius: 2px;
+  color:black;
+  padding: 0.1rem 0.2rem;
+  background-color: rgba(255, 254, 243, 0.925);
+  font-weight: 500;
+  color: #FDB066;
 }
 
 .code {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.8rem;
+  font-family: monospace;
+  font-size: 0.85rem;
 }
 
-.first {
-  padding-top: 10px;
+
+/* Footer Styles */
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 100px;
 }
 
-.type {
+footer p {
   font-family: 'BodyGrotesqueFit';
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+footer a {
+  text-decoration: underline;
 }
