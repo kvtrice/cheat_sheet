@@ -1,19 +1,42 @@
+/* Universal Styles */
+
 * {
-  background-color: plum;
+  background-color: #E9E1FD;
+}
+
+html {
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'OhnoBlazeface';
+  src: url('fonts/OhnoBlazeface36.woff2') format('woff2'),
+       url('fonts/OhnoBlazeface36.woff') format('woff'),
+       url('fonts/OhnoBlazeface36.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BodyGrotesqueFit';
+  src: url('fonts/BodyGrotesqueFitRegular.woff2') format('woff2'),
+       url('fonts/BodyGrotesqueFitRegular.woff') format('woff'),
+       url('fonts/BodyGrotesqueFitRegular.ttf') format('truetype');
 }
 
 body {
   text-align: center;
+  font-family: 'BodyGrotesqueFit';
 }
 
 h1 {
-  font-family: "Bungee Shade"
+  font-family: "OhnoBlazeface";
+  font-size: 2.25rem;
 }
 
 h2 {
   color: black;
-  font-size: 20px;
-  font-family: "Space Grotesk"
+  font-size: 1.5rem;
+  font-family: "BodyGrotesqueFit";
+  line-height: 1.2;
 }
 
 table {
@@ -46,19 +69,18 @@ th {
   color: black;
   padding-bottom: 10px;
   padding-left: 5px;
-  font-family: "Roboto";
-  font-size: 10px;
+  font-family: 'BodyGrotesqueFit', sans-serif;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  letter-spacing: 0.25em;
   color: #313639;
 }
 
 td {
   padding: 5px;
-  font-family: "roboto";
+  font-family: "Poppins";
   font-weight: 300;
-  font-size: 13px;
-  letter-spacing: 0.5px;
+  font-size: 0.8rem;
 }
 
 span {
@@ -71,13 +93,14 @@ footer {
 }
 
 p {
-  font-family: "Dancing Script";
+  font-family: 'Arapey';
+  font-style: italic;
   font-size: 20px;
 }
 
 .code {
-  font-family: monospace;
-  letter-spacing: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
 }
 
 .first {
@@ -85,5 +108,6 @@ p {
 }
 
 .type {
-  font-weight: normal;
+  font-family: 'BodyGrotesqueFit';
+  font-size: 0.9rem;
 }
