@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kat's Coding Cheat Sheet!</title>
+    <link rel="stylesheet" href="normalize.css" />
     <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,9 +14,30 @@
     />
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <h1>Kat's Coding Cheat Sheet</h1>
+      <!-- Nav -->
+      <nav>
+        <div>
+          <h1>
+            <span class="name-highlight">Kat's</span><br />
+            <p>Coding Cheat Sheet</p>
+          </h1>
+          <hr />
+        </div>
+        <ul>
+          <li class="nav-link"><a href="#">HTML</a></li>
+          <li class="nav-link"><a href="#">CSS</a></li>
+          <ul>
+            <li class="nested-link"><a href="#">Selectors</a></li>
+            <li class="nested-link"><a href="#">Properties</a></li>
+          </ul>
+          <li class="nav-link"><a href="#">JavaScript</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <!-- Main Content Start -->
     <main>
       <div>
         <h2>CSS Selectors</h2>
@@ -119,9 +141,9 @@
           </tbody>
         </table>
       </div>
+      <footer>
+        <p>Thanks for stopping by! 🤗</p>
+      </footer>
     </main>
-    <footer>
-      <p>Thanks for stopping by! 🤗</p>
-    </footer>
   </body>
 </html>

@@ -27,17 +27,89 @@ body {
   font-family: 'BodyGrotesqueFit';
 }
 
-h1 {
-  font-family: "OhnoBlazeface";
-  font-size: 2.25rem;
-}
-
 h2 {
   color: black;
   font-size: 1.5rem;
   font-family: "BodyGrotesqueFit";
   line-height: 1.2;
 }
+
+/* Nav Styles */
+
+h1 p {
+  font-family: 'Arapey';
+  font-style: italic;
+  font-size: 1.5rem;
+  background-color: white;
+  line-height: 0;
+  margin-bottom: 2.5rem;
+}
+
+nav, 
+nav div,
+nav h1,
+nav ul,
+nav li {
+  background-color: white;
+}
+
+nav {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  position: fixed;
+  margin: 2rem 2rem;
+  border-radius: 5px;
+  border: solid 1px black;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
+
+.nav-link {
+  padding-top: 0.5rem;
+}
+
+.nested-link {
+  padding-bottom: 0.2rem;
+}
+
+.nested-link a {
+  color: hsla(0, 0%, 0%, 0.6);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.name-highlight {
+  font-family: "OhnoBlazeface";
+  font-size: 1.8rem;
+  text-align: center;
+  background-color: white;
+}
+
+/* Main section styles */
+
+main {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 15rem);
+}
+
+
 
 table {
   width: 1000px;
@@ -83,7 +155,7 @@ td {
   font-size: 0.8rem;
 }
 
-span {
+.code span {
   background-color: papayawhip;
 }
 
